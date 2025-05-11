@@ -1,0 +1,71 @@
+.container {
+    background: url('/fond.png') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+  }
+  
+  .card {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 2rem; //espace largeur carré blanc
+    border-radius: 20px;
+    text-align: center;
+    width: 350px; // longueur du carré blanc 
+    box-shadow: 0 0px 20px rgba(0, 0, 0, 0.1); //reflet arrière du carré fond
+  }
+  
+  .logo {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center; // ✅ centre l'image horizontalement
+    align-items: center;     
+  }
+  
+  .title {
+    font-size: 1.1rem; //Taille du texte
+    font-weight: 600; //gras du texte LA CLE D'UNE VIE....
+    margin-bottom: 0.8rem; // espcae entre le premier texte et le sous titre
+  }
+  
+  .subtitle {
+    font-size: 0.9rem; //Taille du texte
+    margin-bottom: 1.9rem; // espcae entre le sous titre et le bouton commencer
+    color: #444;
+  }
+  
+  .primaryBtn {
+    background-color: #3f9142;
+    color: white;
+    border: none;
+    padding: 0.5rem 1.1rem;
+    border-radius: 5px;
+    font-size: 0.9rem; //Taille du texte
+    font-weight: 300; //gras du texte du premier bouton
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+  
+  .signInText {
+    font-size: 0.8rem; // taille du texte pour créer un compte 
+    margin-bottom: 0.5rem; // espcae entre le texte compte et le bouton se connecetr
+    color: #333;
+  }
+  
+  .secondaryBtn {
+    border: 1px solid #3f9142;
+    color: #3f9142;
+    background-color: transparent;
+    padding: 0.4rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.85rem;
+  }
+  
+  .secondaryBtn:hover {
+    background-color: #3f9142;
+    color: white;
+  }
+  

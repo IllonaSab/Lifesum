@@ -1,0 +1,110 @@
+.container {
+  background: #f6f6f6;
+  height :100vh;
+  padding: 2rem;
+  border-radius: 12px;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  background: linear-gradient(to right, #d8f2ea, #f2f5d8);
+  padding: 2rem;
+  border-radius: 12px;
+  text-align: center;
+  align-items: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+}
+
+.center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kcal {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.label {
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+.macros {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 8px;
+  margin-top: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+
+  div {
+    text-align: center;
+  }
+}
+
+.date {
+  text-align: center;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+}
+
+.mealList {
+  margin-top: 1rem;
+}
+
+.mealCard {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 12px;
+  margin: 1rem 0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.left {
+  display: flex;
+  align-items: center;
+}
+
+.left img {
+  margin-right: 1rem;
+}
+
+.info h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.info p {
+  margin: 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.right {
+  font-size: 1.5rem;
+  color: #333;
+  border: 2px solid #333;
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
