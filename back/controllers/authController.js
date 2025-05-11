@@ -116,7 +116,7 @@ const updateProfile = async (req, res) => {
 };
 
 // 🔍 Fonction pour récupérer le profil utilisateur
-exports.getUserProfile = async (req, res) => {
+const getUserProfile = async (req, res) => {
   const { email } = req.params;
   try {
     const result = await pool.query('SELECT * FROM users WHERE email = $1', [email]);

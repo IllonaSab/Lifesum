@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
 import styles from './index.module.scss';
-import ProgressBar from '../MacrosProgress';
 import Image from 'next/image';
 
 export default function Step6() {
@@ -65,7 +64,6 @@ export default function Step6() {
       <div className={styles.card}>
         <div className={styles.header}>
           <button className={styles.back} onClick={() => router.back()}>←</button>
-          <ProgressBar currentStep={6} totalSteps={6} />
         </div>
 
         <h2 className={styles.title}>

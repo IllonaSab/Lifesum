@@ -1,4 +1,3 @@
-// ✅ step1/page.js (ou index.js)
 'use client';
 import { useState } from 'react';
 import { useRouter } from 'next/navigation';
@@ -25,7 +24,6 @@ export default function Step1() {
     const heightNum = parseFloat(height);
     const age = new Date().getFullYear() - new Date(birthdate).getFullYear();
 
-    // ✅ Formules simples (exemple)
     const bmr = gender === 'male'
       ? 10 * weightNum + 6.25 * heightNum - 5 * age + 5
       : 10 * weightNum + 6.25 * heightNum - 5 * age - 161;
@@ -49,14 +47,14 @@ export default function Step1() {
   };
 
   return (
-    <div>
-      <h2>Étape 1 - Informations utilisateur</h2>
-      <input name="gender" onChange={handleChange} placeholder="Homme ou femme" />
-      <input name="birthdate" onChange={handleChange} placeholder="Date de naissance" />
-      <input name="weight" onChange={handleChange} placeholder="Poids (kg)" />
-      <input name="height" onChange={handleChange} placeholder="Taille (cm)" />
-      <input name="activity" onChange={handleChange} placeholder="Niveau d'activité (low, medium, high)" />
-      <button onClick={handleNext}>Suivant</button>
+    <div className={styles.container}>
+      <h2 className={styles.title}>Étape 1 - Informations utilisateur</h2>
+      <input className={styles.input} name="gender" onChange={handleChange} placeholder="Homme ou femme" />
+      <input className={styles.input} name="birthdate" onChange={handleChange} placeholder="Date de naissance" />
+      <input className={styles.input} name="weight" onChange={handleChange} placeholder="Poids (kg)" />
+      <input className={styles.input} name="height" onChange={handleChange} placeholder="Taille (cm)" />
+      <input className={styles.input} name="activity" onChange={handleChange} placeholder="Niveau d'activité (low, medium, high)" />
+      <button className={styles.button} onClick={handleNext}>Suivant</button>
     </div>
   );
 }

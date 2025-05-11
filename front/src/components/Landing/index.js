@@ -3,9 +3,6 @@ import { useRouter } from 'next/navigation';
 import styles from './index.module.scss';
 import Image from 'next/image';
 
-
-
-
 export default function Landing() {
   const router = useRouter();
   
@@ -19,12 +16,22 @@ export default function Landing() {
         <p className={styles.subtitle}>
           Optimisez votre alimentation pour atteindre vos objectifs personnels.
         </p>
+        
+        {/* Redirection vers la page d'inscription */}
         <button
            className={styles.primaryBtn}
-           onClick={() => router.push('/signup/step1')}> S'incrire
+           onClick={() => router.push('/signup/step1')}> 
+           S'inscrire
         </button>
+        
         <p className={styles.signInText}>Vous avez déjà un compte ?</p>
-        <button className={styles.secondaryBtn}>Se connecter</button>
+        
+        {/* Redirection vers la page de connexion */}
+        <button 
+          className={styles.secondaryBtn}
+          onClick={() => router.push('/login')}> 
+          Se connecter
+        </button>
       </div>
     </div>
   );
