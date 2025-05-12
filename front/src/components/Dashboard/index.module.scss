@@ -1,59 +1,68 @@
+// Conteneur principal de la page Dashboard 
+
 .container {
-  background: #f6f6f6;
-  height :100vh;
-  padding: 2rem;
-  border-radius: 12px;
-  font-family: 'Arial', sans-serif;
+  background: #f6f6f6;              // Couleur de fond 
+  height: 100vh;                    // Prend toute la hauteur de la fenêtre visible
+  padding: 2rem;                    // Espacement intérieur autour du contenu
+  border-radius: 12px;              // Coins arrondis 
+  font-family: 'Arial', sans-serif; 
 }
 
+// En-tête : les calories consommées, restantes, brûlées 
 .header {
-  display: flex;
-  justify-content: space-between;
-  background: linear-gradient(to right, #d8f2ea, #f2f5d8);
-  padding: 2rem;
-  border-radius: 12px;
-  text-align: center;
-  align-items: center;
+  display: flex;                                   // Affiche les éléments enfants côte à côte
+  justify-content: space-between;                 // Espace les éléments aux extrémités
+  background: linear-gradient(to right, #d8f2ea, #f2f5d8); // Dégradé horizontal 
+  padding: 2rem;                                   // Espace intérieur
+  border-radius: 12px;                             // Coins arrondis
+  text-align: center;                              // Texte centré dans les enfants
+  align-items: center;                             // Aligne verticalement les enfants au centre
 }
 
+// Bloc (consommées ou brûlées) 
 .stat {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  font-weight: 500;
+  flex-direction: column;  // Les éléments (valeur et label) sont empilés verticalement
+  align-items: center;     // Centrage horizontal
+  font-weight: 500;        // Légère graisse sur le texte
 }
 
+// Bloc central des calories restantes 
 .center {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
+// Nombre de kcal restantes (gros chiffre) 
 .kcal {
-  font-size: 2rem;
-  font-weight: bold;
+  font-size: 2rem;     // Taille de police large
+  font-weight: bold;   // En gras
 }
 
+// Label sous le chiffre ("KCAL RESTANTES")
 .label {
   font-size: 1.1rem;
-  margin-top: 0.5rem;
+  margin-top: 0.5rem;  // Espacement avec le chiffre au-dessus
 }
 
+// Zone des macronutriments (glucides, protéines, lipides)
 .macros {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
-  background: #fff;
+  display: flex;                        // Affiche côte à côte
+  justify-content: center;             // Centre horizontalement
+  gap: 2rem;                            // Espace entre les macros
+  background: #fff;                    // Fond blanc
   padding: 1rem;
   border-radius: 8px;
-  margin-top: 1.5rem;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  margin-top: 1.5rem;                  // Espacement avec le bloc du dessus
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); // Ombre légère
 
   div {
-    text-align: center;
+    text-align: center;                // Centre chaque bloc de macro individuellement
   }
 }
 
+// Date
 .date {
   text-align: center;
   font-weight: 500;
@@ -61,50 +70,51 @@
   font-size: 1.2rem;
 }
 
+// Conteneur de la liste des repas
 .mealList {
-  margin-top: 1rem;
+  margin-top: 1rem;  // Espacement avec la section précédente
 }
 
 .mealCard {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background: #fff;
-  padding: 1rem;
-  border-radius: 12px;
-  margin: 1rem 0;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex; // Met en place un layout en ligne (horizontale)
+  align-items: center; // Centre verticalement les éléments dans le card
+  justify-content: space-between; // Sépare les zones à gauche et à droite
+  background: #fff; // Fond blanc pour contraste avec le fond général
+  padding: 1rem; // Espace intérieur (16px) pour aérer le contenu
+  border-radius: 12px; // Coins arrondis pour un look moderne
+  margin: 1rem 0; // Espacement vertical entre chaque carte
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); // Ombre légère pour effet de profondeur
 }
 
 .left {
-  display: flex;
-  align-items: center;
+  display: flex; // Organise image + infos horizontalement
+  align-items: center; // Centre verticalement l'image et le texte
 }
 
 .left img {
-  margin-right: 1rem;
+  margin-right: 1rem; // Espace entre l'image et le texte
 }
 
 .info h4 {
-  margin: 0;
-  font-size: 1rem;
+  margin: 0; // Supprime l'espacement par défaut du titre
+  font-size: 1rem; // Taille de police standard pour un titre
 }
 
 .info p {
-  margin: 0;
-  font-size: 0.85rem;
-  color: #555;
+  margin: 0; // Supprime l'espacement par défaut du paragraphe
+  font-size: 0.85rem; // Légèrement plus petit que le titre
+  color: #555; // Gris foncé pour garder une bonne lisibilité sans être noir pur
 }
 
 .right {
-  font-size: 1.5rem;
-  color: #333;
-  border: 2px solid #333;
-  border-radius: 50%;
-  width: 32px;
+  font-size: 1.5rem; // Taille du symbole/texte à droite (ex: un bouton + ou icône)
+  color: #333; // Couleur texte sombre
+  border: 2px solid #333; // Bordure circulaire assortie au texte
+  border-radius: 50%; // Crée un cercle parfait
+  width: 32px; // Taille du bouton cercle
   height: 32px;
-  display: flex;
+  display: flex; // Centrage du contenu du bouton
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: pointer; // Curseur en forme de main (indique que c’est cliquable)
 }
