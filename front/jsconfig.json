@@ -1,6 +1,8 @@
 {
-  "compilerOptions": {
+  "compilerOptions": {  // Configuration des chemins personnalisés (alias)
     "paths": {
+      // Crée un alias "@" qui pointe vers la racine du projet (./)
+      // Cela permet d'importer des fichiers comme "@/components/Button"
       "@/*": ["./*"]
     }
   }
