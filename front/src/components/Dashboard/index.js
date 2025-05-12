@@ -129,7 +129,7 @@ export default function Dashboard() {
         </div>
       </div>
 
-// Objectifs nutritionnels calculés 
+  {/*Objectifs nutritionnels calculés */}
       <div className={styles.macros}>
         <div>
           <div>Glucides</div>
@@ -145,10 +145,10 @@ export default function Dashboard() {
         </div>
       </div>
 
-// Date (à terme tu pourrais rendre ça dynamique)
+{/* Date (à terme tu pourrais rendre ça dynamique)*/}
       <div className={styles.date}>11 Mai 2025</div>
 
-// Liste des repas 
+{/* Liste des repas */}
       <div className={styles.mealList}>
         {meals.map((meal, idx) => (
           <div key={idx} className={styles.mealCard}>
@@ -164,7 +164,7 @@ export default function Dashboard() {
               </div>
             </div>
 
-// Champ de saisie pour ajouter les aliments d’un repas
+{/* Champ de saisie pour ajouter les aliments d’un repas*/}
             <input
               placeholder="Ajouter un aliment"
               type="text"
