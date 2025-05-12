@@ -81,11 +81,7 @@ export default function LoginForm() {
               onChange={handleChange}
               required
             />
-
-        // Affiche un message d'erreur si besoin
             {error && <p className={styles.error}>{error}</p>}
-
-         // Bouton de soumission du formulaire 
             <button type="submit" className={styles.button}>CONNEXION</button>
           </form>
         </div>
