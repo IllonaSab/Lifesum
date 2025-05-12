@@ -1,5 +1,4 @@
-import Login from '../../components/Login';
-
+import Login from '../../components/Login'; //import du composant
 export default function LoginPage() {
-  return <Login/>;
+  return <Login/>; //afficher la page Login  
 }
